@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_card_background"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:elevation="2dp">
+
+    <!-- Category Badge with Dynamic Colors -->
+    <TextView
+        android:id="@+id/newsCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TECHNOLOGY"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_category_background"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- News Title -->
+    <TextView
+        android:id="@+id/newsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Breaking News Headline"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- News Description -->
+    <TextView
+        android:id="@+id/newsDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is the detailed description of the news article..."
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:maxLines="3" />
+
+    <!-- Time and Read More -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/newsTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2 hours ago"
+            android:textColor="@color/text_tertiary"
+            android:textSize="12sp" />
+
+        <!-- Read More Button -->
+        <TextView
+            android:id="@+id/readMoreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="READ MORE"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/rounded_read_more" />
+
+    </LinearLayout>
+
+</LinearLayout>
