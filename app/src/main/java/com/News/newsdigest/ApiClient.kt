@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit
 object ApiClient {
 
     private const val BASE_URL = "https://newsapi.org/v2/"
-    private const val API_KEY = "6af99c14384c42298e2dc15a12e69311"
+    private const val API_KEY = ""
 
     private val retrofit by lazy {
         val logging = HttpLoggingInterceptor()
